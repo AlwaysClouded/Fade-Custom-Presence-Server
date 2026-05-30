@@ -27,7 +27,7 @@ function connectDiscord() {
       op: 2,
       d: {
         token: TOKEN,
-        intents: (1 << 0) | (1 << 8), // GUILDS + GUILD_PRESENCES
+        intents: (1 << 0) | (1 << 1) | (1 << 8), // GUILDS + GUILD_PRESENCES
         properties: {
           os: "linux",
           browser: "custom-presence",
